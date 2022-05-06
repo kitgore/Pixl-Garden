@@ -1,6 +1,10 @@
 :root{
     --pixel-size: 4;
 }
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 @font-face {
     font-family: 'silkscreennormal';
@@ -9,18 +13,18 @@
     font-style: normal;
 }
 
-
 body{
-    margin-left: 40px;
-    margin-right: 40px;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
     font-family: silkscreennormal;
     font-size: 30px;
     background-color: rgb(248, 248, 245);
-    width: 100vw;
+    max-width: 100%;
 }
 
 header{
-    margin: 40px 0;
+    margin: 40px 20px;
     padding-bottom: 20px;
     justify-content: space-between;
     display: flex;
@@ -39,7 +43,6 @@ header{
 
 .nav-button{
     display: inline-block;
-    /* background-color: red; */
     width: calc(48px * var(--pixel-size));
     height: calc(16px * var(--pixel-size));
     position: relative;
@@ -67,7 +70,6 @@ header{
 
  .container{
      max-width: 100%;
-     /* max-width: calc(210px * var(--pixel-size)); */
      position: relative;
      margin: 30px auto 5px auto;
      display: flex;
@@ -145,6 +147,8 @@ header{
     color: black;
     display:inline-block;
     margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
 }
 .contact-link:hover{
     border-bottom: solid;
@@ -179,8 +183,8 @@ header{
 
  @media(max-width: 1000px){
      .hero{
-         height: 250px; 
-         width:100%;
+        height: 250px; 
+        width:100%;
      }
      .nav-button{
         width: calc(48px * 3);
@@ -201,13 +205,14 @@ header{
         width: calc(132px * 3);
      }
      .featured-items{
-         width: 360px;
+        width: 360px;
      }
  }
  @media(max-width:750px){
      header{
         flex-wrap: wrap;
         flex-direction: column;
+        margin: 20px 0px;
      }
     .nav-button{
         width: calc(48px * 3);
@@ -223,11 +228,11 @@ header{
         display: block;
      }
      .hero{
-         background-image: url("assets/hero-mobile.svg");
-         height: 150px;
+        background-image: url("assets/hero-mobile.svg");
+        height: 150px;
      }
      .container{
-         padding-bottom: 50px;
+        padding-bottom: 50px;
      }
      .hero-button{
         margin-top: 20px;
@@ -238,15 +243,13 @@ header{
         width: calc(132px * 3);
      }
      .contact-container{
-         margin-top: 30px;
+        margin-top: 30px;
      }
      .logo-link{
-         width: 40px;
-         height: 40px;
+        width: 40px;
+        height: 40px;
      }
      body{
-        margin-left: 20px;
-        margin-right: 20px;
         font-size: 26px;
     }
 }
@@ -268,21 +271,20 @@ header{
         width: calc(192px * 2);
      }
      .grid-image{
-         width:80vw;
-         height:80vw;
+        width:80vw;
+        height:80vw;
      }
      .featured-items{
-         width: 70vw;
+        width: 70vw;
      }
      .contact-header{
-         width: 70vw;
+        width: 70vw;
      }
      .logo{
-         width:80vw;
-         height:20vw;
+        width:80vw;
+        height:20vw;
      }
      body{
-         margin: 0;
-         font-size: 20px;
+        font-size: 20px;
      }
 }
