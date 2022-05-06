@@ -141,14 +141,13 @@ header{
 .contact-header{
     width:320px;
     margin: 30px 0;
+    display: block;
 }
 .contact-link{
     text-decoration: none;
     color: black;
     display:inline-block;
     margin-bottom: 30px;
-    width: 100%;
-    text-align: left;
 }
 .contact-link:hover{
     border-bottom: solid;
