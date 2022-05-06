@@ -16,6 +16,7 @@ body{
     font-family: silkscreennormal;
     font-size: 30px;
     background-color: rgb(248, 248, 245);
+    width: 100vw;
 }
 
 header{
@@ -129,7 +130,6 @@ header{
     transition: opacity 0.3s ease-in-out;
 }
 .contact-container{
-    width: 400px;
     margin-top: 70px;
     margin-left: 10%;
     fill: none;
@@ -239,7 +239,6 @@ header{
      }
      .contact-container{
          margin-top: 30px;
-         width: 270px;
      }
      .logo-link{
          width: 40px;
@@ -259,5 +258,31 @@ header{
      }
      .hero-button-image{
         width: calc(132px * 2.47);
+     }
+     .nav-button{
+        width: calc(48px * 2);
+        height: calc(16px * 2);
+        margin: 10px -5px;
+     }
+     .nav-image{
+        width: calc(192px * 2);
+     }
+     .grid-image{
+         width:80vw;
+         height:80vw;
+     }
+     .featured-items{
+         width: 70vw;
+     }
+     .contact-header{
+         width: 70vw;
+     }
+     .logo{
+         width:80vw;
+         height:20vw;
+     }
+     body{
+         margin: 0;
+         font-size: 20px;
      }
 }
